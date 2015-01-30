@@ -1,6 +1,6 @@
-# Jmonkeyengine::Testdata
+# JMonkeyEngine::TestData
 
-TODO: Write a gem description
+This gem is just for all the sample stuff jMonkeyEngine comes with
 
 ## Installation
 
@@ -20,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'jmonkeyengine'
+require 'jmonkeyengine/testdata'
+
+## setup app with stuff
+asset_manager.load_model("Models/Oto/Oto.mesh.xml")
+```
 
 ## Contributing
 
