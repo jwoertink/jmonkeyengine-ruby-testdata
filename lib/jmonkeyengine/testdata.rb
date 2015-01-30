@@ -1,11 +1,13 @@
 ##
 # Add the jars from vendor
 #
+require 'pathname'
 module JMonkeyEngine
   module TestData
-    
+
     def self.included(base)
-      $CLASSPATH << File.join(File.expand_path(File.dirname(__FILE__), '../..'), 'vendor', 'lib')
+      jar_path = Pathname.new(__dir__).expand_path.parent + 'vendor' + 'lib'
+      $CLASSPATH << jar_path
     end
   end
 end
