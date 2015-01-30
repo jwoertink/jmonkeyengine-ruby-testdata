@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jmonkeyengine/testdata/version'
+require "jmonkeyengine/testdata/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jmonkeyengine-testdata"
-  spec.version       = Jmonkeyengine::Testdata::VERSION
+  spec.version       = JMonkeyEngine::TestData::VERSION
   spec.authors       = ["Jeremy Woertink"]
   spec.email         = ["jeremywoertink@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Add jmonkeyengine samples to your project}
+  spec.description   = %q{Add jMonkeyEngine test data like the ninja, oto, some sounds and backgrounds}
   spec.homepage      = ""
   spec.license       = "MIT"
 
