@@ -2,6 +2,8 @@
 
 This gem is just for all the sample stuff jMonkeyEngine comes with
 
+**NOTE** This gem is like ~65mb in size.
+
 ## Installation
 
 Add this line to your application's Gemfile:
