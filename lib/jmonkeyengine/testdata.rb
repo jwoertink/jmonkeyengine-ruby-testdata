@@ -7,7 +7,7 @@ module JMonkeyEngine
 
     def self.included(base)
       jar_path = Pathname(__FILE__).dirname.expand_path.parent.parent + 'vendor'
-      $CLASSPATH.unshift(jar_path.to_s)
+      $LOAD_PATH.unshift(jar_path.to_s)
     end
   end
 end
