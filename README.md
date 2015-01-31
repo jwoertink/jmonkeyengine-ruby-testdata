@@ -2,7 +2,10 @@
 
 This gem is just for all the sample stuff jMonkeyEngine comes with
 
-**NOTE** This gem is like ~65mb in size.
+**NOTE** This gem is like ~65mb in size. It is meant to be used to do samples and testing
+
+## Requirements
+This gem doesn't really do anything. It just gives you access to some jars. You need the `jmonkeyengine` gem to actually do stuff.
 
 ## Installation
 
@@ -23,9 +26,13 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-require 'jmonkeyengine'
+# Add these lines
 require 'jmonkeyengine/testdata'
+include JMonkeyEngine::TestData
 
+
+# Then you can do this stuff
+require 'jmonkeyengine'
 ## setup app with stuff
 asset_manager.load_model("Models/Oto/Oto.mesh.xml")
 ```
